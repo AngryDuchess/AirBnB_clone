@@ -1,4 +1,4 @@
-section.filter{
+section.filters{
     background-color: white;
     height: 70px;
     width: 100%;
@@ -11,10 +11,11 @@ div.container{
     margin-top: 30px;
     margin-bottom: 30px;
     /*border: 1px solid #484848;*/
-    /*height: 50px;*/
+    height: 50px;
+    padding: 10px;
     text-align: center;
-    /*margin-left: auto;
-    margin-right: auto;*/
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section.filters button{
@@ -27,6 +28,8 @@ section.filters button{
     margin-right: 30px;
     margin-left: 12px ;
     float: right;
+    font-size: 18px;
+    margin-top: 11px;
 }
 
 section.filters button:hover {
