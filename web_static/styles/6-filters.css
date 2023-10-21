@@ -1,20 +1,16 @@
+/*MAIN FILTER*/
 section.filters{
     background-color: white;
     height: 70px;
     width: 100%;
     border: 1px solid #DDDDDD;
     border-radius: 4px;
-    
+    position:relative;
 }
 
 div.container{
     max-width: 1000px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    /*border: 1px solid #484848;*/
-    height: 50px;
-    padding: 10px;
-    text-align: center;
+    margin-top: 30px; 
     margin-left: auto;
     margin-right: auto;
 }
@@ -37,6 +33,7 @@ section.filters button:hover {
     opacity: 0.9;
 }
 
+/*LOCATIONS FILTER*/
 .locations{
     height: 100%;
     width: 25%;
@@ -47,8 +44,8 @@ section.filters button:hover {
 .locations h3, 
 .amenities h3 {
     font-weight: 600px;
-   text-align: left;
-   margin-left: 30px;
+    text-align: left;
+    margin-left: 30px;
    line-height:12px;
 }
 
@@ -57,11 +54,27 @@ section.filters button:hover {
     font-size: 14px;
     text-align: left;
     margin-left: 30px;
-    overflow: hidden;
+    /*overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    line-height: 12px;
+    line-height: 12px;*/
 } 
+
+.locations:hover .popover{
+    display: block;
+}
+
+/*.locations ul{
+    float:left;
+    width: 250px;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}*/
+
+/*AMENITIES FILTER*/
 .amenities{
     height: 100%;
     width: 25%;
@@ -74,9 +87,44 @@ section.filters button:hover {
     overflow: hidden;
     width: 200px;
     text-align: left;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
     margin-left: 30px;
+    /*overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;*/
     line-height: 12px;
+}
+
+.amenities:hover .popover{
+    display: block;
+}
+
+/*.amenities ul{
+    float:left;
+    width: 250px;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}*/
+
+/*DROPDOWN GENERAL SETTINGS*/
+ .popover{
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    background-color: #FAFAFA;
+    display: none;
+    list-style: none;
+    position: relative;
+    z-index: 1;
+}
+
+li{
+    list-style:none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.popover h2{
+    font-size: 16px;
 }
