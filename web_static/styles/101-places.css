@@ -1,29 +1,42 @@
 /*MAIN PLACES CLASS*/
 .places{
-    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    flex-basis: 100%;
+
 }
 
 .places h1{
+    flex-basis: 100%;
     text-align: left;
     font-size: 30px;
 }
 
-.listing{
-    width: 390px;
+.places article{
+    flex-basis: 390px;
     border: 1px solid #FF5A5F;
     border-radius: 4px;
     padding: 20px;
     margin: 20px;
-    display: inline-block;
-    min-height: 250px;
-    vertical-align: top;
+    display: flex;
+    flex-direction: column;
   }
+
 
 article h2{
     font-size: 30px;
     margin-top: 25px;
+    display: flex;
+    align-items: center;
+    flex: 5;
 }
 
+.places article .head{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 /*PRICE BY NIGHT*/
 div.price_by_night {
     color: #FF5A5F;
@@ -35,11 +48,15 @@ div.price_by_night {
     position: relative;
     line-height: 60px;
     float: right;
-    top: -73px;  
+    top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 /*INFORMATION*/
 .information{
+    text-align: center;
     height: 80px;
     border-top: 1px solid #DDDDDD;
     border-bottom: 1px solid #DDDDDD;
@@ -74,8 +91,7 @@ div.price_by_night {
     margin-bottom: 16px;
 }
 
-/*PLACES AMENITIES*/
-
+/*AMENITIES*/
 .places .amenities{
     margin-top: 0px;
     margin-bottom: 40px;
@@ -83,12 +99,15 @@ div.price_by_night {
     text-align: left;
     width: 100%;
     padding: 0px;
+    display: flex;
+    flex-direction: column;
 }
 
 .places .amenities h2{
     font-size: 16px;
     border-bottom: 1px solid #DDDDDD;
     line-height: 50px;
+   
 }
 
 .places .amenities ul{
@@ -117,16 +136,16 @@ div.price_by_night {
     background-image: url(../images/icon_tv.png);
 }
 
-/*PLACES-REVIEWS*/
-
+/*REVIEWS*/
 .places .reviews{
     margin-top: 0px;
     margin-bottom: 40px;
     background-repeat: no-repeat;
-    text-align: left;
     width: 100%;
     padding: 0px;
-    
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .places .reviews h2{
@@ -148,8 +167,12 @@ div.price_by_night {
 .places .reviews ul{
     padding: 0;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .places .reviews ul li{
-    margin-bottom: 32px;
+    line-height: 30px;
+	padding-left: 0px;
 }
