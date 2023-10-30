@@ -1,20 +1,25 @@
 .places{
     color: #2a2a2a;
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 100%;
 }
 
 .places h1{
     text-align: left;
     font-size: 28px;
     margin-bottom: 24px;
+    flex-basis: 100%;
     
 }
 
 .places article{
-    width: 390px;
-    /*padding: 20px;
-    margin: 20px;*/
+    flex-basis: 290px;
+    display: flex;
+    flex-direction: column;
     border: 1px solid #DDDDDD;
     border-radius: 12px;
+    margin: 20px;
 }
 
 img{
@@ -36,5 +41,5 @@ img{
 }
 
 .information p{
-    line-height: 24px;
+    line-height: 21px;
 }
