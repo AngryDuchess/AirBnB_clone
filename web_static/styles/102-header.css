@@ -25,14 +25,13 @@ nav ul li a{
     text-transform: uppercase;
     font-size: 16px;
     padding: 7px 13px;
-    border-radius: 4px;
 
 }
 
 a.active, a:hover{
-    background-color: crimson;
-    transition: 0.5s;
-    color: #ffffff;
+    border-bottom: 3px solid crimson;
+    transition: 0.05s;
+    color: crimson;
     font-weight: 400px;
 }
 
