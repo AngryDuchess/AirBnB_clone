@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBnB</title>
+    <link rel="stylesheet" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="styles/102-header.css">
+    <link rel="stylesheet" href="styles/102-common.css">
+    <link rel="stylesheet" href="styles/102-filters.css">
+    <link rel="stylesheet" href="styles/102-footer.css">
+    <script src="https://kit.fontawesome.com/1f0b7f55ee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--HEADER-->
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <div class="logo"></div>
+            <ul class="nav-tabs">
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Create account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--FILTER-->
+    <div class="container">
+        <section class="filters">
+            <div class="locations" tabindex="0">
+                <h3>Region</h3>
+                <h4>Ashanti, Volta,...</h4>
+                <ul class="popover">
+                    <li>
+                        <h2>Ashanti:</h2>
+                        <ul class="sublist">  
+                            <li>Kumasi</li>
+                            <li>Obuasi</li>
+                            <li>Oforikrom</li>
+                            <li>Offinso</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>Greater Accra:</h2>
+                        <ul class="sublist">
+                            <li>Kumasi</li>
+                            <li>Obuasi</li>
+                            <li>Oforikrom</li>
+                            <li>Offinso</li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="amenities" tabindex="0">
+                <h3>Amenities</h3>
+                <h4>Internet,WiFi...</h4>
+                <ul class="popover">
+                    <li>Internet</li>
+                    <li>WiFi</li>
+                    <li>Air condition</li>
+                    <li>Swimming pool</li>
+                    <li>Bar lounge</li>
+                </ul>
+            </div>
+            <button class="btn"><p>Search</p>
+                <label for="search" class="search-icn">
+                    <i class='fas fa-search'></i>
+                </label>
+            </button>
+        </section>
+        
+    </div>
+
+    <!--FOOTER-->
+    <footer>
+       <p> &copy; Best School</p>
+    </footer>
+</body>
+</html>

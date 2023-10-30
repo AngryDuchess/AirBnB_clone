@@ -1,0 +1,154 @@
+/*FILTER CSS*/
+section.filters{
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    border: 1px solid #CCCCCC;
+    border-radius: 50px;
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 16px;
+}
+
+div.container{
+    max-width: 1000px;
+    margin-top: 30px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*BUTTON STYLING*/
+.btn{
+    font-size: 16px;
+    background-color: crimson;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 30px;
+    border: solid 1px #CCCCCC;
+    height: 48px;
+    width: 20%;
+}
+
+.btn .search-icn{
+    display: none;
+}
+
+.btn:hover{
+    transition: 0.3s;
+    opacity: .8;
+}
+
+/*REGIONS STYLING*/
+.locations{
+    height: 100%;
+    width: 25%;
+    border-right: 1px solid #DDDDDD;
+    text-align: left;
+    padding-top: 12px;
+    cursor: pointer;
+}
+
+.locations h3{
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.locations h4{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.popover{
+    display: none;
+    background-color: #fafafa;
+    border: 1px solid #DDDDDD;
+    /*border-radius: 12px;*/
+    z-index: 1;
+    position: relative;
+    list-style: none;
+    padding: 20px 20px;
+    margin-top: 9px;
+}
+
+.popover h2{
+    font-size: 16px;
+}
+
+.locations:hover .popover{
+    display: block;
+}
+
+/*AMENITIES STYLING*/
+.amenities{
+    height: 100%;
+    width:50%;
+    text-align: left;
+    margin-left: 0px;
+    padding-top: 12px;
+    cursor: pointer;
+}
+
+.amenities h3{
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.amenities h4{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.amenities h4, .amenities h3{
+    margin-left: 16px;
+}
+
+.amenities:hover .popover{
+    display: block;
+}
+
+
+/*RESPONSIVENESS*/
+/*@media (max-width:992px) {
+    .container{
+        max-width: 992px;
+    }
+}*/
+
+@media (max-width:768px) {
+    .container{
+        /*max-width: 200px;*/
+        padding: 0px 60px;
+    }
+
+    .btn p{
+        
+        display: none;
+    }
+    .btn .search-icn{
+        display: block;
+    }
+    .btn{
+        width: 15%;
+    }
+
+    .amenities h3, .locations h3{
+        font-size: 16px;
+    }
+
+    .amenities h4, .locations h4{
+        font-size: 12px;
+    }
+
+    .locations:hover .popover, .locations:focus .popover,
+.amenities:hover .popover, .amenities:focus .popover {
+    display: block;
+}
+
+}
+
