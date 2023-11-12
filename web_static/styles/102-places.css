@@ -29,6 +29,14 @@
     
 }
 
+/*.slider{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}*/
+
+
+
 img{
     max-width: 100%;
     height: auto;
